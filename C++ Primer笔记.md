@@ -8,4 +8,5 @@ const int ci = 42;
 const int *p2 = &ci; //允许改p2的值，这是low-level
 const int *const p3 = p2; //第一个是底层，第二个是顶层
 const int &r = ci; //用于引用的const都是底层
+int *p = p3; // error p3包括底层const的定义，p没有
 ```
